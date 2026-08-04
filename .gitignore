@@ -1,0 +1,24 @@
+# Build output
+
+bin/
+obj/
+
+# .NET tooling
+
+.vs/
+*.user
+*.suo
+
+# Temporary DevVault environment checks
+
+.devvault-check/
+
+# Test results
+
+TestResults/
+*.trx
+
+# OS files
+
+.DS_Store
+Thumbs.db
