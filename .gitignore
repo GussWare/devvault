@@ -2,6 +2,8 @@
 
 bin/
 obj/
+**/bin/
+**/obj/
 
 # .NET tooling
 
