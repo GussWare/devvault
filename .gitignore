@@ -11,10 +11,6 @@ obj/
 *.user
 *.suo
 
-# Temporary DevVault environment checks
-
-.devvault-check/
-
 # Test results
 
 TestResults/
