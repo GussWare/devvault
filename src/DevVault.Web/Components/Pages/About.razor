@@ -1,0 +1,35 @@
+﻿@page "/about"
+@inject DevVault.Web.Services.AppVersionInfo AppVersionInfo
+
+@using DevVault.Web.Services
+
+<PageTitle>Acerca de</PageTitle>
+
+@{
+    var model = AboutVersionPresenter.Create(AppVersionInfo);
+}
+
+<section class="about-shell">
+    <p class="eyebrow">DevVault</p>
+    <h1>Acerca de</h1>
+
+    @if (model.HasError)
+    {
+        <div class="alert alert-danger" role="alert">
+            @model.ErrorText
+        </div>
+    }
+    else
+    {
+        <dl class="version-details">
+            <div>
+                <dt>Versión actual</dt>
+                <dd>@model.VersionText</dd>
+            </div>
+            <div>
+                <dt>Fecha de arranque</dt>
+                <dd>@model.StartedAtText</dd>
+            </div>
+        </dl>
+    }
+</section>
